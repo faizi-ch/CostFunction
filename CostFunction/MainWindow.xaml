@@ -1,0 +1,28 @@
+﻿<dx:DXWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" x:Class="CostFunction.MainWindow"
+        Title="Cost Function Calculator" Height="403.765" Width="569.619">
+    <Grid>
+        <dxe:ListBoxEdit Name="XList" HorizontalAlignment="Left" Height="135" Margin="69,117,0,0" VerticalAlignment="Top" Width="123"/>
+        <dxe:ListBoxEdit Name="YList" HorizontalAlignment="Left" Height="135" Margin="209,117,0,0" VerticalAlignment="Top" Width="123"/>
+        <dxe:TextEdit Name="TotalTextEdit" HorizontalAlignment="Left" Margin="266,55,0,0" VerticalAlignment="Top" Width="123" EditValueChanging="TotalTextEdit_EditValueChanging" TabIndex="2"/>
+        <dxe:TextEdit Name="XTextEdit" HorizontalAlignment="Left" Margin="117,257,0,0" VerticalAlignment="Top" Width="75" KeyDown="XTextEdit_KeyDown" TabIndex="3"/>
+        <dxe:TextEdit Name="YTextEdit" HorizontalAlignment="Left" Margin="257,257,0,0" VerticalAlignment="Top" Width="75" KeyDown="YTextEdit_KeyDown" TabIndex="4"/>
+        <dxe:TextEdit x:Name="Theta0TextEdit" HorizontalAlignment="Left" Margin="126,17,0,0" VerticalAlignment="Top" Width="92" TabIndex="0" />
+        <dxe:TextEdit x:Name="Theta1TextEdit" HorizontalAlignment="Left" Margin="297,21,0,0" VerticalAlignment="Top" Width="92" TabIndex="1" />
+        <dxe:ListBoxEdit x:Name="CalculatedList" HorizontalAlignment="Left" Height="135" Margin="349,117,0,0" VerticalAlignment="Top" Width="123"/>
+        <Button Name="CalculateButton" Content="Calculate" HorizontalAlignment="Left" Margin="397,259,0,0" VerticalAlignment="Top" Width="75" Click="CalculateButton_Click" TabIndex="5"/>
+        <Label Content="Theta0: " HorizontalAlignment="Left" Margin="69,17,0,0" VerticalAlignment="Top"/>
+        <Label Content="Theta1: " HorizontalAlignment="Left" Margin="240,17,0,0" VerticalAlignment="Top"/>
+        <Label Content="No. of training examples(m): " HorizontalAlignment="Left" Margin="69,51,0,0" VerticalAlignment="Top"/>
+        <Label Content="Values of X: " HorizontalAlignment="Left" Margin="69,91,0,0" VerticalAlignment="Top"/>
+        <Label Content="Enter X: " HorizontalAlignment="Right" Margin="0,256,427,0" VerticalAlignment="Top"/>
+        <Label Content="Enter Y: " HorizontalAlignment="Right" Margin="0,256,287,0" VerticalAlignment="Top"/>
+        <Label Content="Values of Y: " HorizontalAlignment="Left" Margin="202,91,0,0" VerticalAlignment="Top"/>
+        <Label Content="h(x): " HorizontalAlignment="Left" Margin="349,91,0,0" VerticalAlignment="Top"/>
+        <Label Name="CalculatedLabel" Content="Calculated Cost Function: " HorizontalAlignment="Left" Margin="69,288,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</dx:DXWindow>
